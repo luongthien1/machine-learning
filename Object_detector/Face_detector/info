@@ -1,0 +1,19 @@
+** Dự án về phát hiện gương mặt trong ảnh.
+
+Framework/Library chính:
+  - Tensorflow
+  - Keras
+
+Quy trình:
+  - Lấy mẫu từ máy ảnh.
+  - Gán nhãn thủ công.
+  - Làm giàu dữ liệu.
+  - Tiền xử lý: Nạp và hiệu chỉnh các thông số về kích thước của hình ảnh.
+  - Xây dựng mô hình (VGG16 + 2 Dense Layer cho mỗi đầu ra)
+  - Huấn luyện mô hình
+  - Kiểm thử và chỉnh sửa, điều chỉnh siêu tham số để huấn luyện trở lại.
+  - Lưu mô hình.
+  - Chạy mô hình trên thời gian thực, xác định gương mặt trên camera.
+
+Kết quả:
+  - Tốt, độ chính xác cao, không mất nhiều thời gian.
